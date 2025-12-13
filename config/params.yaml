@@ -1,0 +1,59 @@
+sensor_fusion:
+  lidar_weight: 1.0
+  camera_weight: 1.0
+  imu_weight: 0.5
+
+frontend:
+  lidar_max_range: 30.0
+  lidar_min_range: 0.5
+  scan_downsampling_rate: 1
+  icp_max_iterations: 50
+  icp_fitness_threshold: 0.01
+
+  camera_enable: true
+  camera_focal_length: 718.856
+  camera_cx: 607.1928
+  camera_cy: 185.2157
+  optical_flow_max_features: 200
+  optical_flow_quality: 0.01
+
+backend:
+  pose_graph_enabled: true
+  optimization_frequency: 5.0
+  g2o_solver: lm_var
+  g2o_iterations: 20
+  robust_kernel_delta: 1.0
+
+loop_closure:
+  enabled: true
+  min_score: 0.7
+  min_keyframe_separation: 10
+  descriptor_type: orb
+  descriptor_size: 256
+
+imu:
+  preintegration_enabled: true
+  gyro_noise: 1.6968e-4
+  accel_noise: 2.0e-3
+  gyro_bias_noise: 1.9393e-5
+  accel_bias_noise: 3.0e-3
+
+mapping:
+  occupancy_grid_enabled: true
+  grid_resolution: 0.1
+  grid_max_range: 20.0
+  octomap_enabled: true
+  octomap_resolution: 0.1
+
+  publish_frequency: 2.0
+
+ros_topics:
+  lidar_scan: /scan
+  camera_image: /camera/image_raw
+  camera_info: /camera/camera_info
+  imu: /imu/data
+  odom: /odometry/filtered
+  map_grid: /map
+  map_cloud: /map_cloud
+  trajectory: /trajectory
+  loop_closure_edges: /loop_closure_edges

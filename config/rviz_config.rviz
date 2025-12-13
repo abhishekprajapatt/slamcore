@@ -1,0 +1,192 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Grid1
+        - /Map1
+        - /Odometry1
+      Splitter Ratio: 0.5
+    Tree Height: 210
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+
+Visualization Manager:
+  Class: ''
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_common/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Angle Tolerance: 0.1
+      Class: rviz_common/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 0; 0
+          Color Style: Flat Color
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.3
+          Color: 0; 255; 0
+          Scale: 1
+          Value: false
+        Value: true
+      Enabled: true
+      Keep (Number of samples): 0
+      Name: Odometry
+      Position Tolerance: 0.1
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /odometry/filtered
+      Value: true
+    - Alpha: 0.7
+      Class: rviz_common/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /map
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz_common/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: ''
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Map Cloud
+      Position Transformer: ''
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.05
+      Style: Flat Squares
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /map_cloud
+      Unreliable: false
+      Use Rainbow: true
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_common/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_common/MoveCamera
+    - Class: rviz_common/Select
+    - Class: rviz_common/FocusCamera
+    - Class: rviz_common/Measure
+      Line color: 128; 128; 0
+    - Class: rviz_common/SetInitialPose
+      Theta std deviation: 0.26179938779914946
+      Topic:
+        Depth: 5
+        Durability Policy: 'Volatile'
+        History Policy: 'Keep Last'
+        Reliability Policy: 'Reliable'
+        Value: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz_common/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: 'Volatile'
+        History Policy: 'Keep Last'
+        Reliability Policy: 'Reliable'
+        Value: /goal_pose
+  Value: true
+  Views:
+    Current:
+      Class: rviz_common/Orbit
+      Distance: 20
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.5
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz_common)
+      Yaw: 0.5
+    Saved Views: {}
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 846
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000035600000354fc0200000008fb0000001200530065006c0065006300740069006f006e00000000280000015f0000005c00fffffffb0000001e0054006f006f006c002000500072006f0070006500720074006900650073aefffffffffd00000003000004950000010dfc0100000002fb0000001600440069007300700006c00610079007300000002800000016f0000016700fffffffb000000280054006f006f006c002000500072006f0070006500720074006900650073003100000003c60000010f0000000000000000000004950000035400000001000000020000000100000002fc0000000000fffffffaffffffff0000000000000000000000000100000000afe0100000001fb0000001a0056006900650077007300200054006f006f006c00740069006e0065000000003d000002ad0000004300ffffff000000030000072000000100fc00000001fb0000001a00020000000000000000010000000000000000000000000000000000000720000003540000000400000004000000080000000800fffffffb00000010004f007600650072006c0061007900000000000000035600000000000000000000000c000004950000000000fffffffaffffffff0100000002fb0000000a0049006d00610067006500000002800000035600000000000000fb0000001a00470072006900640050006c0061006e0065007300000002800000035600000000000000000000000000000000
+  Selection:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1800
+  X: 20
+  Y: 43
