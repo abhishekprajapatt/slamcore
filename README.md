@@ -1,4 +1,4 @@
-# Slamcore: Multi-Sensor SLAM System for ROS2
+# Slamcore (ROS2): Multi-Sensor SLAM System
 
 A lightweight, production-grade simultaneous localization and mapping (SLAM) system designed for ROS2 (Humble/Iron) with comprehensive support for multi-sensor fusion, loop closure detection, and real-time map building.
 
@@ -391,8 +391,7 @@ If you use Slamcore in research, please cite:
   title={Slamcore: Multi-Sensor SLAM for ROS2},
   author={Slamcore Contributors},
   year={2025},
-  url={https://github.com/slamcore/slamcore}
-}
+url={https://github.com/abhishekprajapatt/slamcore}
 ```
 
 ## License
@@ -401,7 +400,7 @@ MIT License – See LICENSE file for details.
 
 ## Support & Issues
 
-For bug reports and feature requests, visit the [GitHub Issues](https://github.com/slamcore/slamcore/issues) page.
+For bug reports and feature requests, visit the [GitHub Issues](https://github.com/abhishekprajapatt/slamcore/issues) page.
 
 ## Related Work
 
