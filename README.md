@@ -60,7 +60,7 @@ Slamcore implements a complete SLAM pipeline combining LiDAR odometry, visual od
 ```bash
 mkdir -p ~/slamcore_ws/src
 cd ~/slamcore_ws/src
-git clone https://github.com/slamcore/slamcore.git
+git clone https://github.com/abhishekprajapatt/slamcore.git
 cd slamcore
 ```
 
