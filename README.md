@@ -389,7 +389,7 @@ If you use Slamcore in research, please cite:
 ```
 @software{slamcore2025,
   title={Slamcore: Multi-Sensor SLAM for ROS2},
-  author={Slamcore Contributors},
+  author={Abhishek Prajapatt},
   year={2025},
 url={https://github.com/abhishekprajapatt/slamcore}
 ```
